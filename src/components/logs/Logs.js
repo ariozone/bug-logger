@@ -21,7 +21,9 @@ const Logs = () => {
           <h3 className='center'>Logged Defects</h3>
         </li>
         {logs.map(log => (
-          <li className='center'>{log.message}</li>
+          <li key={log.id} className='center'>
+            {log.message}
+          </li>
         ))}
       </ul>
     </div>
